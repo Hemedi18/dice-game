@@ -17,7 +17,7 @@ var computerScores = 0
 
 var name = prompt("Enter your name for personalized contents: ")
 var names = document.querySelectorAll(".name")
-for (let i = 0; i<= names.length; i++){
+for (let i = 0; (i<= names.length-1); i++){
   names[i].innerHTML = `${name}`
 
 }
