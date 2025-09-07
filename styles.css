@@ -107,9 +107,3 @@ footer{
 .make-huge{
   font-size: 1.5rem;
 }
-
-@media (min-width: 600px ){
-  .container{
-    width: 50%; /* Overrides the default width for larger screens */
-  }
-}
