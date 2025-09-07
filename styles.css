@@ -10,15 +10,12 @@ body{
 .container{
   padding: 1%;
   min-height: 90vh;
-  width: 95%;
+  width: 100%; /* Default mobile-first width */
   margin: 1vh auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: .5fr 1fr 1fr;
   gap: 1rem;
-
-
-
 }
 .introduction{
   grid-column: span 2;
@@ -30,7 +27,6 @@ h1{
   font-size: 2rem;
   font-weight: 900;
   color:#00ffaa;
-;
   margin: 3% auto;
 }
 details{
@@ -58,7 +54,6 @@ details p{
 }
 .dice img{
   height: 14rem;
-
   border-radius: 10px;
 }
 .score-board{
@@ -75,7 +70,6 @@ details p{
   margin: 2%;
   color: aqua;
 }
-
 
 .name{
   color: #f3f5f4;
@@ -102,7 +96,6 @@ button:hover,button:active{
 
 footer{
   height: 5vh;
-;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,12 +110,6 @@ footer{
 
 @media (min-width: 600px ){
   .container{
-    width: 50%;
-  }
-}
-
-@media (max-width: 599px){
-  .container{
-    width: 100%;
+    width: 50%; /* Overrides the default width for larger screens */
   }
 }
